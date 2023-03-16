@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cars_db
+    username: sandbox_user
+    password: sandbox_password
+    hikari:
+      maximum-pool-size: 100
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+search:
+  settings:
+    parallelism: 20
+    domain: "----message me if you need this information----"
+    search-uri: "----message me if you need this information----"
+    user-agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/539.16 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/427.21"
+    search-results-response-field: "----message me if you need this information----"
+    search-results-separator-regex: "----message me if you need this information----"
+  payload:
+    address: "----ca postal code----"
+    proximity: 250
+    page-size: 100
+    sort-by: "CreatedDateAsc"
+    with-photos: true
+    with-price: true
+    is-new: true
+    is-used: true
+    is-damaged: true
+    is-cpo: true
+    is-dealer: true
+    is-private: true
